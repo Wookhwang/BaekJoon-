@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string.h>
-/* #include <queue> */
 using namespace std;
 
 void dfs(int m_x, int n_y);
@@ -15,12 +14,9 @@ int main() {
 
 	int t;
 	int k;
-	int x; /* 행 */
-	int y; /* 열 */
+	int x; 
+	int y; 
 	
-	/* queue< pair<int, int>> q; */	
-
-	/* 입력부 */
 	cin >> t;
 	for (int a= 0; a < t; a++) {
 		
@@ -36,7 +32,7 @@ int main() {
 		}
 	
 		int count = 0;
-		/* 검사부 */
+		
 		for (int i = 0; i < m; i++) {
 			for (int j = 0; j < n; j++) {
 				if (arr[i][j] == 1) {
@@ -67,32 +63,3 @@ void dfs(int x, int y) {
 		}
 	}
 }
-/*
-void bfs(int f_x, int f_y, queue< pair<int, int>> q) {
-
-	int x;
-	int y;
-	int n_x;
-	int n_y;
-
-	while (!q.empty()) {
-		x = q.front().first;
-		y = q.front().second;
-		q.pop();
-	
-		for (int d = 0; d < 4; d++) {
-			n_x = x + dx[d];
-			n_y = y + dy[d];
-
-			if (n_x < 0 || n_x >= f_x) continue;
-			if (n_y < 0 || n_y >= f_y) continue;
-			if (check[n_x][n_y]) continue;
-			if (arr[n_x][n_y] == 0) continue;
-
-			check[n_x][n_y] = true;
-			q.emplace(n_x, n_y);
-		}
-	}
-	return;
-}
-*/
