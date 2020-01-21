@@ -1,7 +1,7 @@
 /*
 BaekJoon 4344
-Problem name : Æò±ÕÀº ³Ñ°ÚÁö
-category : 1Â÷¿ø ¹è¿­
+Problem name : í‰ê· ì€ ë„˜ê² ì§€
+category : 1ì°¨ì› ë°°ì—´
 */
 
 #include <iostream>
@@ -35,11 +35,8 @@ int main() {
 			else {
 				;
 			}
-		}
-		 
+		}	 
 		printf("%.3f%% \n", ((double)count / (double)T) * 100);
 	}
-
-
 	return 0;
 }
